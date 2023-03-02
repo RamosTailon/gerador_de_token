@@ -1,4 +1,4 @@
-const test = document.querySelector("h1");
+const test = document.querySelector("#token");
 
 const listString = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -17,8 +17,6 @@ const randomToken = () => {
     }
   }
   const tokenList = tList.join().replaceAll(",", "");
-
-  console.log(tokenList);
 
   return tokenList;
 };

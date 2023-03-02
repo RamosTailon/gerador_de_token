@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background-image: linear-gradient(45deg, #4e32dd, #af2b7a);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.form {
+  /*Glassmorphism*/
+  background: rgba(40, 33, 70, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /*-------*/
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  margin: 0;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.8em;
+}
+#token {
+  border: 1px solid #cbb0b0;
+  padding: 3px 16px;
+  text-align: center;
+  font-size: 1.2em;
+}
+label {
+  margin-bottom: 0.5em;
+}
+.campo input {
+  padding: 3px 16px;
+  height: 1.8em;
+  font-size: 1em;
+  outline: none;
+  border-radius: 7px;
+  border: none;
+  transition: 0.4s;
+}
+
+.campo input:focus {
+  box-shadow: rgba(60, 144, 208, 0.68) 0px 0.48em 1em 0px;
+}
+
+#submit {
+  background-color: #000080;
+  color: #fff;
+  height: 1.7em;
+  width: 6em;
+  border: none;
+  padding: 5px 15px;
+  font-size: 1.2em;
+  border-radius: 10px;
+}

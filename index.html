@@ -7,8 +7,39 @@
     <title>Random Token</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./javascript/index.js" defer></script>
+    <!-- google fonts = nunito sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>olá token</h1>
+    <form class="form">
+      <div class="campo">
+        <label for="token">Token</label>
+        <p id="token" name="token">++</p>
+      </div>
+      <div class="campo">
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Digite o seu nome."
+        />
+      </div>
+      <div class="campo">
+        <label for="input_token">Token:</label>
+        <input
+          type="text"
+          id="input_token"
+          name="input_token"
+          placeholder="Digite o Token acima."
+        />
+      </div>
+      <input type="submit" id="submit" value="LOGIN" />
+    </form>
   </body>
 </html>
