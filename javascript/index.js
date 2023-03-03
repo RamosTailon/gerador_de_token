@@ -1,5 +1,3 @@
-const test = document.querySelector("#token");
-
 const listString = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
 const randomIndex = () => {
@@ -21,4 +19,21 @@ const randomToken = () => {
   return tokenList;
 };
 
-test.innerHTML = randomToken();
+/*---------------------*/
+const tokenRender = document.querySelector("#token");
+
+const nameInput = document.querySelector("#name");
+const tokenInput = document.querySelector("#input_token");
+
+function login(e) {
+  e.preventDefault();
+  const enterPass = {
+    name: nameInput.value,
+    tokenKey: tokenInput.value,
+  };
+  enterPass.tokenKey = enterPass.tokenKey.toUpperCase();
+
+  alert(`Nome: ${enterPass.name} Token: ${enterPass.tokenKey}`);
+}
+
+tokenRender.innerHTML = randomToken();

@@ -68,4 +68,15 @@ label {
   padding: 5px 15px;
   font-size: 1.2em;
   border-radius: 10px;
+  transition: 0.3s;
+  outline: none;
+}
+
+#submit:hover {
+  background-color: #134694;
+  transform: scale(1.05);
+}
+
+#submit:active {
+  background-color: #d8be16;
 }

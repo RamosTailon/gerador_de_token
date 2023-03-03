@@ -16,7 +16,7 @@
     />
   </head>
   <body>
-    <form class="form">
+    <form onsubmit="login(event)" class="form">
       <div class="campo">
         <label for="token">Token</label>
         <p id="token" name="token">++</p>
@@ -36,6 +36,7 @@
           type="text"
           id="input_token"
           name="input_token"
+          maxlength="5"
           placeholder="Digite o Token acima."
         />
       </div>
