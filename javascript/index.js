@@ -20,6 +20,7 @@ const randomToken = () => {
 };
 
 /*---------------------*/
+//TOKEN DOM
 const tokenRender = document.querySelector("#token");
 
 const nameInput = document.querySelector("#name");
@@ -33,7 +34,14 @@ function login(e) {
   };
   enterPass.tokenKey = enterPass.tokenKey.toUpperCase();
 
-  alert(`Nome: ${enterPass.name} Token: ${enterPass.tokenKey}`);
+  if (enterPass.tokenKey == tokenRender.innerText) {
+    alert("acesso PERMITIDO!");
+  } else {
+    alert("acesso NEGADO!!!");
+  }
+
+  // alert(`Nome: ${enterPass.name} Token: ${enterPass.tokenKey}`);
 }
 
+//RENDERIZAÇÃO DO TOKEN
 tokenRender.innerHTML = randomToken();
